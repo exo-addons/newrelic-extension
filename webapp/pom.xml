@@ -34,7 +34,7 @@
     <dependency>
       <groupId>com.newrelic.agent.java</groupId>
       <artifactId>newrelic-api</artifactId>
-      <scope>compile</scope>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.gatein.portal</groupId>

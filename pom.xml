@@ -81,6 +81,11 @@
         <artifactId>newrelic-api</artifactId>
         <version>${newrelic.version}</version>
       </dependency>
+      <dependency>
+        <groupId>com.newrelic.agent.java</groupId>
+        <artifactId>newrelic-agent</artifactId>
+        <version>${newrelic.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
