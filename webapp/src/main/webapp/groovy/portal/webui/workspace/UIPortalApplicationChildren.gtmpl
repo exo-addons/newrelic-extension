@@ -1,0 +1,16 @@
+<%
+  import org.json.JSONArray;
+
+  def rcontext = _ctx.getRequestContext() ;
+  def jsManager = rcontext.getJavascriptManager();
+  uicomponent.renderChildren();
+%>
+</div>
+<script type="text/javascript">
+  <%=jsManager.getJavaScripts()%>
+</script>
+
+<!-- NewRelic BrowserTimingFooter -->
+<%= com.newrelic.api.agent.NewRelic.getBrowserTimingFooter() %>
+</body>
+</html>
