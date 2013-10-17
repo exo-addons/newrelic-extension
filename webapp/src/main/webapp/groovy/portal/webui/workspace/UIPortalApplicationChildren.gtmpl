@@ -10,7 +10,11 @@
   <%=jsManager.getJavaScripts()%>
 </script>
 
+<%
+  // NewRelic BrowserTimingHeader
+  org.exoplatform.services.security.ConversationState.getCurrent().setAttribute("newRelicBrowserTimingHeader", com.newrelic.api.agent.NewRelic.getBrowserTimingHeader()); %>
 <!-- NewRelic BrowserTimingFooter -->
 <%= com.newrelic.api.agent.NewRelic.getBrowserTimingFooter() %>
+
 </body>
 </html>
