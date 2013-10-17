@@ -45,7 +45,7 @@
           <field name="dependencies">
             <collection type="java.util.ArrayList">
               <value>
-                <string>my-extension</string>
+                <string>newrelic-extension</string>
               </value>
             </collection>
           </field>
