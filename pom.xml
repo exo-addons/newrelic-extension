@@ -46,6 +46,7 @@
   <modules>
     <module>config</module>
     <module>webapp</module>
+    <module>pkg</module>
   </modules>
   <scm>
     <connection>scm:git:git://github.com/exo-addons/newrelic-extension.git</connection>
@@ -67,6 +68,23 @@
   </properties>
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.exoplatform.addons.newrelic</groupId>
+        <artifactId>newrelic-extension-config</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.exoplatform.addons.newrelic</groupId>
+        <artifactId>newrelic-extension-pkg</artifactId>
+        <type>pom</type>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.exoplatform.addons.newrelic</groupId>
+        <artifactId>newrelic-extension-webapp</artifactId>
+        <type>war</type>
+        <version>${project.version}</version>
+      </dependency>
       <!-- Import versions from platform project -->
       <dependency>
         <groupId>org.exoplatform.platform</groupId>
