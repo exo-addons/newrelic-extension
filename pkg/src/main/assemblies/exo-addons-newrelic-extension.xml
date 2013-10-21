@@ -40,11 +40,20 @@
       <outputDirectory>/newrelic/lib</outputDirectory>
       <includes>
         <include>org.exoplatform.addons.newrelic:newrelic-extension-config:jar</include>
+      </includes>
+      <scope>provided</scope>
+      <outputFileNameMapping>${artifact.artifactId}-${artifact.baseVersion}.${artifact.extension}</outputFileNameMapping>
+      <useProjectArtifact>false</useProjectArtifact>
+    </dependencySet>
+    <!-- Libraries -->
+    <dependencySet>
+      <outputDirectory>/newrelic/lib</outputDirectory>
+      <includes>
         <include>com.newrelic.agent.java:newrelic-api:jar</include>
         <include>com.newrelic.agent.java:newrelic-agent:jar</include>
       </includes>
       <scope>provided</scope>
-      <outputFileNameMapping>${artifact.artifactId}-${artifact.baseVersion}.${artifact.extension}</outputFileNameMapping>
+      <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
       <useProjectArtifact>false</useProjectArtifact>
     </dependencySet>
   </dependencySets>

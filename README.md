@@ -42,7 +42,7 @@ Add the NewRelic agent in the eXo Platform at the end of the following file : ``
 ...
 
 # NewRelic
-CATALINA_OPTS="${CATALINA_OPTS} -javaagent:${CATALINA_HOME}/lib/newrelic-agent-3.0.1.jar"
+CATALINA_OPTS="${CATALINA_OPTS} -javaagent:${CATALINA_HOME}/lib/newrelic-agent.jar"
 CATALINA_OPTS="${CATALINA_OPTS} -Dnewrelic.config.file=${CATALINA_HOME}/conf/newrelic.yml"
 CATALINA_OPTS="${CATALINA_OPTS} -Dnewrelic.config.log_file_path=${CATALINA_HOME}/logs"
 CATALINA_OPTS="${CATALINA_OPTS} -Dnewrelic.config.log_daily=true"
