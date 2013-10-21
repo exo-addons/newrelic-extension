@@ -117,7 +117,14 @@
   <% } } %>
 
   <!-- NewRelic BrowserTimingHeader -->
-  <%= org.exoplatform.services.security.ConversationState.getCurrent().getAttribute("newRelicBrowserTimingHeader") %>
+  <%
+    String newRelicBrowserTimingHeader = org.exoplatform.services.security.ConversationState.getCurrent().getAttribute("newRelicBrowserTimingHeader");
+    if (newRelicBrowserTimingHeader != null) {
+      print(newRelicBrowserTimingHeader);
+    } else {
+      print ("<!-- Real User Monitoring is not activated or available -->");
+    }
+  %>
 
   <link rel="shortcut icon" type="image/x-icon"  href="<%=docBase%>/favicon.ico" />
   <%for(skinConfig in portalSkins) {
