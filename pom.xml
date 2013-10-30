@@ -57,7 +57,7 @@
   <properties>
     <!-- 3rd party libraries versions -->
     <exoplatform.version>4.0.2</exoplatform.version>
-    <newrelic.version>3.0.1</newrelic.version>
+    <newrelic.version>3.1.0</newrelic.version>
     <!-- **************************************** -->
     <!-- Jenkins Settings -->
     <!-- **************************************** -->
